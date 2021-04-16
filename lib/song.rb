@@ -42,10 +42,10 @@ class Song
   end
 
   def self.new_from_filename(file)
-    song = self.new
-    song.name = file.split(" - ")[1].split(".")[0]
-    song.artist_name = file.split(" - ")[0]
-    song.save
+    new_song = self.new
+    new_song.name = file.split(" - ")[1].split(".")[0]
+    new_song.artist_name = file.split(" - ")[0]
+    new_song.save
   end
 
 end
