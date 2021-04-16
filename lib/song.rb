@@ -46,7 +46,6 @@ class Song
     song.name = file.split(" - ")[1].split(".")[0]
     song.artist_name = file.split(" - ")[0]
     song.save
-
   end
 
 end
